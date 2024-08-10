@@ -17,6 +17,7 @@ public class CategoryController {
     public CategoryController(CategoryService categoryService){
 
         this.categoryService=categoryService;
+        System.out.println("ths is category controllel");
     }
 @GetMapping("/{id}")
     public ResponseEntity<Long> getCategoryById(@PathVariable Long id ) {
